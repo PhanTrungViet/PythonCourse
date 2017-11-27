@@ -29,5 +29,19 @@ def Ingredient():
     if(tastes == random_question):
         #print resulf
         print(random.choice(ingredients[tastes]))
+    else:
+        print("wrong")
 
-Ingredient()
+def Ingredient2():
+    for key in questions:
+        print(questions[key])
+        reply = input()
+        if(reply == "Y" or reply == "y" or reply.lower() == "yes"):
+            print(random.choice(ingredients[key]))
+            break
+        elif(reply == "N" or reply == "n" or reply.lower() == "no"):
+            continue
+
+
+#Ingredient()
+Ingredient2()
