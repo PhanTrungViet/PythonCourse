@@ -46,9 +46,9 @@ for c in customers:
 #everyone purchase
 for c in customers:
     print(c.name +" choose: ")
-    for c2 in c.canbuy:
-        if c2[:][1] == 1:
-            c.own = c2
+    for cb in c.canbuy:
+        if cb[:][1] == 1:
+            c.own = cb
             print(c.own)
             break
 #cal profit of shop
